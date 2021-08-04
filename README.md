@@ -26,14 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/hemanuela/huddle-landing-page-with-alternating-feature-blocks-master/blob/main/design/screenshot.jpg)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My github](https://github.com/hemanuela/huddle-landing-page-with-alternating-feature-blocks-master)
+- Live Site URL: [Here o>](https://hemanuela.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
 
 ## My process
 
