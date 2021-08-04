@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.12rem;
+  font-family: 'Open Sans';
+
+
+  background-image: url('images/bg-hero-desktop.svg');
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/** HEADER **/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+  height: 8.75rem;
+  background-color: hsla(192, 100%, 96%, 0.438);
+}
+
+header .logo {
+  transform: scale(0.9);
+}
+
+.button-white {
+  min-width: 11.8rem;
+  height: 3.12rem;
+  border-radius: 2rem;
+  font-family: 'Open Sans';
+  color: hsl(192, 100%, 9%);
+  font-weight: 700;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.button-white:hover {
+  color: hsla(191, 5%, 41%, 0.849);
+  box-shadow: rgba(30, 30, 31, 0.281) 0px 8px 24px;
+}
+
+/** MAIN **/
+main {
+  display: grid;
+  height: 40rem ;
+  grid-template-columns: minmax(27rem, 43%) minmax(43rem, 57%);
+  column-gap: 4rem;
+  padding: 4rem;
+  font-family: 'Poppins';
+  place-self: center;
+  background-color: hsla(192, 100%, 96%, 0.438);
+  background-size: cover;
+}
+
+.image-00 {
+  justify-self: right;
+}
+
+main .mockup {
+  width: 45rem;
+}
+
+.intro-text {
+  margin: auto;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.button-pink {
+  width: 17.5rem;
+  height: 3.37rem;
+  border-radius: 2rem;
+  font-family: 'Poppins';
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.button-pink:hover {
+  background-color: hsla(322, 84%, 65%, 0.822);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main h1 {
+  color: hsl(192, 100%, 9%);
+}
+
+main p {
+  font-weight: lighter;
+  color: hsl(192, 100%, 9%);
+  font-family: 'Open Sans';
+}
+
+/** CONTENT **/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  position:relative;
+  z-index:999999;
+}
+
+.box-01, .box-02, .box-03 {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 2rem 4rem;
+  border-radius: 1.5rem;
+}
+
+.svg-img {
+  height: 22rem;
+  padding: 2rem;
+}
+
+.text-01, .text-02, .text-03 {
+  justify-content: center;
+  padding: 2rem 8rem;
+}
+
+.call-box {
+  margin: auto;
+  padding: 2rem 10rem;
+  height: 17.25rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-self: center;
+  margin-top: 6rem;
+  background-color: hsl(0, 0%, 100%);
+
+  box-shadow: rgba(63, 65, 66, 0.281) 0px 8px 24px;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.call-box .button-pink {
+  width: 22rem;
+  height: 4rem;
+  margin-top: 2rem;
+}
+
+/** FOOTER **/
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 35rem;
+  align-items: center;
+  background-color: hsl(192, 100%, 9%);
+  margin-top: -6rem;
+  position: relative;
+  z-index: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.column-01 {
+  margin: 6rem 1rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-01 div {
+  margin-bottom: 2rem;
+}
+
+.column-01 img {
+  margin-right: 1rem;
+}
+
+.column-01 img:hover {
+  filter: invert(0.36) sepia(1) saturate(14) hue-rotate(244.8deg) brightness(1);
+}
+
+.logo-footer {
+  filter: grayscale(1) invert(1) brightness(2);
+}
+
+.column-02 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2.2rem;
+  margin: 4rem 6rem 0 4rem;
+}
+
+.column-02 li:hover{
+  text-decoration: underline;
+}
+
+.column-03 {
+  text-align: center;
+}
+
+.column-03 img {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.column-03 img:hover {
+  filter: invert(0.36) sepia(1) saturate(14) hue-rotate(244.8deg) brightness(1);
+}
+
+/** BOOTOM-FOOTER-LINE **/
+.bottom-footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  text-align: right;
+  padding-right: 2rem;
+  justify-content: center;
+  height: 3rem;
+} 
+
+
+/** MEDIA QUERY 1300-769 **/
+@media only screen and (max-width: 1300px) and (min-width: 769px) {
+  body {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    height: 55rem;
+  }
+
+  main .mockup {
+    width: 40rem;
+  }
+
+  main button {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .call-box {
+    margin: auto;
+    margin-top: 6rem;
+    padding: 1rem 6rem;
+  }
+
+  .column-02 {
+    margin: auto;
+  }
+
+  .text-01, .text-02, .text-03 {
+    padding: 2rem;
+  }
+
+  .bottom-footer {
+   text-align: center;
+  }
+
+}
+
+
+
+/** MEDIA QUERY 768-522 **/
+@media only screen and (max-width: 768px) and (min-width: 522px) {
+  body {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  main {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    height: 55rem;
+  }
+
+  main button {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  main .mockup {
+    width: 30rem;
+  }
+
+  .column-02 {
+    margin: auto;
+  }
+
+  .text-01, .text-02, .text-03 {
+    padding: 2rem;
+  }
+    
+  .box-01, .box-03 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-02 {
+    flex-direction: column-reverse;
+  }
+
+  .call-box {
+    margin: auto;
+    margin-top: 6rem;
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    height: 47rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .column-01 {
+    margin: 10rem 0 0 1rem;
+  }
+
+  .column-02 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    line-height: 2.2rem;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .column-02 ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .bottom-footer {
+    height: 4rem;
+    text-align: center;
+   }
+}
+
+
+
+/** MEDIA QUERY 522-375 **/
+@media only screen and (max-width: 522px) and (min-width: 375px) {
+  body {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 375px;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  header {
+    margin:0;
+    padding: 1rem;
+  }
+
+  header .logo {
+    transform: scale(1);
+    height: 1.2rem;
+  }
+
+  .button-white {
+    min-width: 8.8rem;
+    height: 2.12rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    height: 45rem;
+    padding: 0;
+  }
+
+  main button {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  main .mockup {
+    width: 20rem;
+  }
+
+  .content {
+    margin-top: 4rem;
+  }
+
+  .svg-img {
+    height: 18rem;
+    padding: 2rem;
+  }
+
+  .text-01, .text-02, .text-03 {
+    padding: 2rem;
+  }
+    
+  .box-01, .box-03 {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .box-02 {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 337px;
+  }
+
+  .call-box {
+    margin: auto;
+    margin-top: 6rem;
+    padding: 2rem 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    height: fit-content;
+    align-content: center;
+  }
+
+  .call-box .button-pink {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+  }
+  
+  footer {
+    width: 100%;
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .column-01 {
+    margin: 7rem 1rem 1rem 1rem;
+  }
+
+  .logo-footer {
+    width: 10rem;
+  }
+
+  .column-02 {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem;
+  }
+
+  .column-02 {
+    margin: auto;
+  }
+
+  .column-02 ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .bottom-footer {
+    height: 4rem;
+    text-align: center;
+   }
+}
